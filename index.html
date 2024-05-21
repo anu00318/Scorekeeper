@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class=" card">
+                    <img
+                        src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3784&q=80">
+                    <header class="card-header">
+                        <p class="card-header-title">Ping Pong Score keeper</p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1><span id='p1Display'>0</span> to <span id="p2Display">0</span></h1>
+                            <h4 class=>Use the Buttons below to keep score</h4>
+                            <div class="level select is-rounded">
+                                <h5 class=" level-left level-item">Playing to</h5>
+                                <select id="playto" class=" level-left level-item">
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id='p1button' class="card-footer-item button is-info is-large is-dark">+1 Player
+                            One</button>
+                        <button id='p2button' class="card-footer-item button is-success is-large is-dark">+1 Player
+                            Two</button>
+                        <button id="reset" class="card-footer-item button is-danger is-large is-dark">Reset</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
